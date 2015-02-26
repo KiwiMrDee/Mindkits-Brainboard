@@ -1,0 +1,118 @@
+// Gauntlet v1.0
+// by MindKits Education
+
+const int ButtonStart = 3 ;
+
+
+
+const int MotorEnable    = 0 ;
+
+const int LeftMotorFwd   = 4;
+const int LeftMotorRev   = 5 ;
+const int RightMotorFwd  = 6 ;
+const int RightMotorRev  = 7 ;
+const int RightIndicator = 8 ;
+const int soundPin       = 9 ;
+const int Headlights     = 12 ;
+const int LeftIndicator  = 13 ;
+
+int motorSpeed = 10;
+
+void setup()
+{
+  pinMode(4,OUTPUT);  // LeftMotorFwd 
+  pinMode(5,OUTPUT);  // LeftMotorRev 
+  pinMode(6,OUTPUT);  // RightMotorFwd
+  pinMode(7,OUTPUT);  // RightMotorRev
+  pinMode(8,OUTPUT);  // RightIndicator
+  pinMode(9,OUTPUT);  // soundPin
+  pinMode(12,OUTPUT); // Headlights
+  pinMode(13,OUTPUT); // LeftIndicator
+  
+  while(!digitalRead(ButtonStart));//
+}
+
+void allStop()
+{ 
+  rightMotor(0);
+  leftMotor(0); 
+}
+
+void pivot(bool clockwise, unsigned int time)
+{
+  if(!clockwise)
+  {
+    rightMotor(1);
+    leftMotor(0);
+  }
+  else
+  {
+    rightMotor(0);
+    leftMotor(1);
+  }
+  delay(time);
+  allStop();
+}
+
+void pivotRight(unsigned int time)
+{
+  pivot(false,time);
+}
+
+void pivotLeft(unsigned int time)
+{
+  pivot(true,time);
+}
+
+void forward(unsigned int time)
+{
+  rightMotor(1);
+  leftMotor(1);
+  delay(time); 
+  allStop();
+}
+
+void rightMotor(signed char dir)
+{
+  if(dir>0)
+  {
+    digitalWrite(RightMotorRev,dir);
+    analogWrite(RightMotorFwd,motorSpeed);
+  }
+  else if(dir<0)
+  {
+    digitalWrite(RightMotorRev,LOW);
+    analogWrite(RightMotorFwd,255-motorSpeed); 
+  }
+  else
+  {
+    digitalWrite(RightMotorRev,LOW);
+    analogWrite(RightMotorFwd,0);
+  }
+}
+
+void leftMotor(signed char dir)
+{
+  if(dir)
+  {
+    analogWrite(LeftMotorRev,255-motorSpeed);
+    digitalWrite(LeftMotorFwd,!dir);
+  }
+  else
+  {  
+    analogWrite(LeftMotorRev,0);
+    digitalWrite(LeftMotorFwd,0);
+  }  
+}
+
+
+void loop()
+{
+ //put your instructions for the tank in here
+    forward(1000);
+    pivotRight(4000);
+    pivotLeft(1000);
+    
+    //All tank instructions above this line.
+    while(1); 
+}
