@@ -183,10 +183,10 @@ void playTaDa(){
 void playSiren(){
   for (int i=0; i <= 2; i++){
     for (int j=50; j <= 300; j++){
-      brainBoard.beep(j*10, 2);   // 2.5 kHz for 40 millisec
+      brainBoard.beep(j*10, 2);
     }
     for (int j=300; j >= 50; j--){
-      brainBoard.beep(j*10, 2);   // 2.5 kHz for 40 millisec
+      brainBoard.beep(j*10, 2);
     }
   }
   delay(40);
