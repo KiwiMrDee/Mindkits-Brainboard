@@ -41,18 +41,18 @@ void loop() {
 // ----------------------------------------------------------
 // Enter all your tank instructions above this line.
 //
-// Example commands below
-//  goForward(1000);
-//  goBackward(1000);
-//  turnLeft(1000);
-//  turnRight(1000);
-//  backLeft(1000);
-//  backRight(1000);
-//  twistLeft(1000);
-//  twistRight(1000);
-//  doWiggle(4);
-//  playSiren();
-//  playTaDa();
+// Here are some example commands for you to copy.
+//    goForward(1000);
+//    goBackward(1000);
+//    turnLeft(1000);
+//    twistLeft(1000);
+//    backLeft(1000);
+//    turnRight(1000);
+//    twistRight(1000);
+//    backRight(1000);
+//    doWiggle(4);
+//    playSiren();
+//    playTaDa();
 
     while(!digitalRead(ButtonLeft));
 }
