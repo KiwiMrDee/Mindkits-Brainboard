@@ -34,7 +34,8 @@ void setup()
 
 void loop()
 {
- //put your instructions for the tank in here
+// Put your instructions for the tank in here:
+// ----------------------------------------------------------
 
     goForward(1000);
     goBackward(1000);
@@ -51,7 +52,9 @@ void loop()
 //  playSiren();
 //  playTaDa();
 
+// ----------------------------------------------------------
 // All tank instructions above this line.
+
     while(!digitalRead(ButtonLeft));
 }
 
