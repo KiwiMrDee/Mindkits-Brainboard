@@ -1,7 +1,7 @@
 #include <BrainBoard.h>
 BrainBoard brainBoard; // Create BrainBoard object. this automatically sets up the pin modes (input/output).
 
-// Gauntlet v1.5
+// Gauntlet v1.6
 // by MindKits Education
 // Works up to 1.6.0
 
@@ -17,8 +17,7 @@ const int Headlights     = 12 ;
 const int MotorEnable    =  0 ;
 int motorSpeed = 10; // link to potentiometer?
 
-void setup()
-{
+void setup() {
   pinMode(LeftMotorFwd  ,OUTPUT);
   pinMode(LeftMotorRev  ,OUTPUT);
   pinMode(RightMotorFwd ,OUTPUT);
@@ -32,14 +31,18 @@ void setup()
   while(!digitalRead(ButtonLeft));
 }
 
-void loop()
-{
-// Put your instructions for the tank in here:
+void loop() {
+// Put your instructions for the tank below this line:
 // ----------------------------------------------------------
 
     goForward(1000);
     goBackward(1000);
     
+// ----------------------------------------------------------
+// All tank instructions above this line.
+//
+// Example commands below
+// ----------------------------------------------------------
 //  goForward(1000);
 //  goBackward(1000);
 //  turnLeft(1000);
@@ -51,9 +54,6 @@ void loop()
 //  doWiggle(4);
 //  playSiren();
 //  playTaDa();
-
-// ----------------------------------------------------------
-// All tank instructions above this line.
 
     while(!digitalRead(ButtonLeft));
 }
