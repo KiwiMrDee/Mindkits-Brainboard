@@ -32,17 +32,16 @@ void setup() {
 }
 
 void loop() {
-// Put your instructions for the tank below this line:
+// Enter all your tank instructions below this line:
 // ----------------------------------------------------------
 
     goForward(1000);
     goBackward(1000);
     
 // ----------------------------------------------------------
-// All tank instructions above this line.
+// Enter all your tank instructions above this line.
 //
 // Example commands below
-// ----------------------------------------------------------
 //  goForward(1000);
 //  goBackward(1000);
 //  turnLeft(1000);
