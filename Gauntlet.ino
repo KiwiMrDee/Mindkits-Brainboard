@@ -1,8 +1,9 @@
 #include <BrainBoard.h>
 BrainBoard brainBoard; // Create BrainBoard object. this automatically sets up the pin modes (input/output).
 
-// Gauntlet v1.4
+// Gauntlet v1.5
 // by MindKits Education
+// Works up to 1.6.0
 
 const int ButtonLeft     =  3;
 const int LeftMotorFwd   =  4;
@@ -29,46 +30,43 @@ void setup()
 
   brainBoard.beep(2500, 400);
   while(!digitalRead(ButtonLeft));
-
 }
 
 void loop()
 {
  //put your instructions for the tank in here
 
-    forward(1000);
-    backward(1000);
+    goForward(1000);
+    goBackward(1000);
+    
+//  goForward(1000);
+//  goBackward(1000);
+//  turnLeft(1000);
+//  turnRight(1000);
+//  backLeft(1000);
+//  backRight(1000);
+//  twistLeft(1000);
+//  twistRight(1000);
+//  doWiggle(4);
+//  playSiren();
+//  playTaDa();
 
-// turnLeft(1000);
-// turnRight(1000);
-// backLeft(1000);
-// backRight(1000);
-// twistLeft(1000);
-// twistRight(1000);
-// playSiren();
-// wiggle(4);
-// playTaDa();
-
-    //All tank instructions above this line.
+// All tank instructions above this line.
     while(!digitalRead(ButtonLeft));
-    // while(1);
 }
-
-
 
 void allStop() {
   rightMotor(0);
   leftMotor(0);
 }
 
-void forward(unsigned int time) {
+void goForward(unsigned int time) {
   rightMotor(1);
   leftMotor(1);
   delay(time);
   allStop();
 }
-
-void backward(unsigned int time) {
+void goBackward(unsigned int time) {
   rightMotor(-1);
   leftMotor(-1);
   delay(time);
@@ -78,7 +76,6 @@ void backward(unsigned int time) {
 void turnRight(unsigned int time) {
   turn(false,time);
 }
-
 void turnLeft(unsigned int time) {
   turn(true,time);
 }
@@ -86,7 +83,6 @@ void turnLeft(unsigned int time) {
 void backRight(unsigned int time) {
   back(false,time);
 }
-
 void backLeft(unsigned int time) {
   back(true,time);
 }
@@ -98,12 +94,12 @@ void twistLeft(unsigned int time) {
   twist(true,time);
 }
 
-void wiggle(unsigned int numWiggles) {
+void doWiggle(unsigned int numWiggles) {
   for (int i=0; i <= numWiggles; i++){
     twistRight(200);
     twistLeft(200);
-    allStop();
   }
+  allStop();
 }
 
 void turn(bool clockwise, unsigned int time) {
@@ -117,8 +113,9 @@ void turn(bool clockwise, unsigned int time) {
   delay(time);
   allStop();
 }
+
 void back(bool clockwise, unsigned int time) {
-  if(!clockwise) {
+  if(clockwise) {
     rightMotor(0);
     leftMotor(-1);
   } else {
@@ -178,17 +175,17 @@ void playTaDa(){
     brainBoard.beep(2500, 200);   // 2.5 kHz for 40 millisec
     delay(40);
     brainBoard.beep(2500, 1000); // 2.5 kHz for 500 millisec
+    delay(40);
 }
 
 void playSiren(){
   for (int i=0; i <= 2; i++){
     for (int j=50; j <= 300; j++){
-      brainBoard.beep(j*10, 2);
+      brainBoard.beep(j*10, 2);   // Siren Up
     }
     for (int j=300; j >= 50; j--){
-      brainBoard.beep(j*10, 2);
+      brainBoard.beep(j*10, 2);   // Siren Down
     }
   }
   delay(40);
 }
-
