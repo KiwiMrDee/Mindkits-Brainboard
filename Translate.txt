@@ -1,0 +1,42 @@
+// Niuean by @KaraSmithNZ
+tu                   // allStop
+fanoKiMua            // goForward
+fanoKiTua            // goBackward
+fanoFaahiMatau       // turnRight
+fanoFaahiHema        // turnLeft
+liuKiTuaFaahiMatau   // goBackRight
+liuKiTuaFaahiHema    // goBackLeft
+viviloKeHeFaahiMatau // twistRight
+viviloKeHeFaahiHema  // twistLeft
+fakaMavilovilo       // wiggle
+peleTada             // playTada
+peleUiuiUiui         // playsiren
+
+// Maori by @temokoroa               
+// Robot        Mihini Karetao       
+// allStop      ??                   
+// goForward    Neke Whakamua        
+// goBackward   Neke Whakamuri       
+// turnRight    Neke Whakatematau    
+// turnLeft     Neke Whakatemauī     
+// goBackRight  ??                   
+// goBackLeft   ??                   
+// twistRight   ??                   
+// twistLeft    ??                   
+// wiggle       ??                   
+// playTada     ??                   
+// playsiren    Whakatangihia       
+
+// Kiwi by @KiwiMrDee
+sweetAs              // allStop
+yeahNahYeah          // goForward
+nahYeahNah           // goBackward
+powerRight           // turnRight
+powerOtherRight      // turnLeft
+slideRight           // goBackRight
+slideOtherRight      // goBackLeft
+boogieRight          // twistRight
+boogieOtherRight     // twistLeft
+hakaBaby             // wiggle
+doDaLourde           // playTada
+weeoooWeeoo          // playsiren
