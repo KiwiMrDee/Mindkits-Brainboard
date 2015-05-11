@@ -37,7 +37,7 @@ void loop() {
 
     goForward(1000);
     goBackward(1000);
-    
+
 // ----------------------------------------------------------
 // Enter all your tank instructions above this line.
 //
@@ -56,6 +56,22 @@ void loop() {
 
     while(!digitalRead(ButtonLeft));
 }
+
+/*
+// Niuean by @KaraSmithNZ
+void tu()                                    { allStop();            }
+void fanoKiMua(unsigned int time)            { goForward(time);      }  // fanoKiMua(1000);
+void fanoKiTua(unsigned int time)            { goBackward(time);     }  // fanoKiTua(1000);
+void fanoFaahiMatau(unsigned int time)       { turnRight(time);      }  // fanoFaahiMatau(1000);
+void fanoFaahiHema(unsigned int time)        { turnLeft(time);       }  // fanoFaahiHema(1000);
+void liuKiTuaFaahiMatau(unsigned int time)   { backRight(time);      }  // liuKiTuaFaahiMatau(1000);
+void liuKiTuaFaahiHema(unsigned int time)    { backLeft(time);       }  // liuKiTuaFaahiHema(1000);
+void viviloKeHeFaahiMatau(unsigned int time) { twistRight(time);     }  // viviloKeHeFaahiMatau(1000);
+void viviloKeHeFaahiHema(unsigned int time)  { twistLeft(time);      }  // viviloKeHeFaahiHema(1000);
+void fakaMavilovilo(unsigned int numWiggles) { doWiggle(numWiggles); }  // fakaMavilovilo(4);
+void peleTada()                              { playTaDa();           }  // peleTada();
+void peleUiuiUiui()                          { playSiren();          }  // peleUiuiUiui();
+*/
 
 void allStop() {
   rightMotor(0);
