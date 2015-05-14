@@ -68,7 +68,7 @@ void solomuliTaumatau(unsigned int time)    { backRight(time);      }  // solomu
 void solomuliAgavale(unsigned int time)     { backLeft(time);       }  // solomuliAgavale(1000);
 void mimiloTaumatau(unsigned int time)      { twistRight(time);     }  // mimiloTaumatau(1000);
 void mimiloAgavale(unsigned int time)       { twistLeft(time);      }  // mimiloAgavale(1000);
-void siva(unsigned int numWiggles)          { doWiggle(numWiggles); }  // siva(4);
+void luelue(unsigned int numWiggles)        { doWiggle(numWiggles); }  // siva(4);
 void malo()                                 { playTaDa();           }  // malo();
 void lapataiga()                            { playSiren();          }  // lapataiga();
 */
