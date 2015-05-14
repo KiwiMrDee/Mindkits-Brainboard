@@ -1,7 +1,7 @@
 #include <BrainBoard.h>
 BrainBoard brainBoard; // Create BrainBoard object. this automatically sets up the pin modes (input/output).
 
-// Gauntlet v1.6
+// Gauntlet v1.7
 // by MindKits Education
 // Works up to 1.6.0
 
@@ -58,22 +58,6 @@ void loop() {
 }
 
 /*
-// Niuean by @KaraSmithNZ
-void tu()                                    { allStop();            }
-void fanoKiMua(unsigned int time)            { goForward(time);      }  // fanoKiMua(1000);
-void fanoKiTua(unsigned int time)            { goBackward(time);     }  // fanoKiTua(1000);
-void fanoFaahiMatau(unsigned int time)       { turnRight(time);      }  // fanoFaahiMatau(1000);
-void fanoFaahiHema(unsigned int time)        { turnLeft(time);       }  // fanoFaahiHema(1000);
-void liuKiTuaFaahiMatau(unsigned int time)   { backRight(time);      }  // liuKiTuaFaahiMatau(1000);
-void liuKiTuaFaahiHema(unsigned int time)    { backLeft(time);       }  // liuKiTuaFaahiHema(1000);
-void viviloKeHeFaahiMatau(unsigned int time) { twistRight(time);     }  // viviloKeHeFaahiMatau(1000);
-void viviloKeHeFaahiHema(unsigned int time)  { twistLeft(time);      }  // viviloKeHeFaahiHema(1000);
-void fakaMavilovilo(unsigned int numWiggles) { doWiggle(numWiggles); }  // fakaMavilovilo(4);
-void peleTada()                              { playTaDa();           }  // peleTada();
-void peleUiuiUiui()                          { playSiren();          }  // peleUiuiUiui();
-*/
-
-/*
 // Samoan by Janet Tautaiolefua 
 void taofi()                                { allStop();            }  // taofi();
 void aluILuma(unsigned int time)            { goForward(time);      }  // aluILuma(1000);
@@ -87,6 +71,21 @@ void mimiloAgavale(unsigned int time)       { twistLeft(time);      }  // mimilo
 void siva(unsigned int numWiggles)          { doWiggle(numWiggles); }  // siva(4);
 void malo()                                 { playTaDa();           }  // malo();
 void lapataiga()                            { playSiren();          }  // lapataiga();
+*/
+/*
+// Niuean by @KaraSmithNZ
+void tu()                                    { allStop();            }
+void fanoKiMua(unsigned int time)            { goForward(time);      }  // fanoKiMua(1000);
+void fanoKiTua(unsigned int time)            { goBackward(time);     }  // fanoKiTua(1000);
+void fanoFaahiMatau(unsigned int time)       { turnRight(time);      }  // fanoFaahiMatau(1000);
+void fanoFaahiHema(unsigned int time)        { turnLeft(time);       }  // fanoFaahiHema(1000);
+void liuKiTuaFaahiMatau(unsigned int time)   { backRight(time);      }  // liuKiTuaFaahiMatau(1000);
+void liuKiTuaFaahiHema(unsigned int time)    { backLeft(time);       }  // liuKiTuaFaahiHema(1000);
+void viviloKeHeFaahiMatau(unsigned int time) { twistRight(time);     }  // viviloKeHeFaahiMatau(1000);
+void viviloKeHeFaahiHema(unsigned int time)  { twistLeft(time);      }  // viviloKeHeFaahiHema(1000);
+void fakaMavilovilo(unsigned int numWiggles) { doWiggle(numWiggles); }  // fakaMavilovilo(4);
+void peleTada()                              { playTaDa();           }  // peleTada();
+void peleUiuiUiui()                          { playSiren();          }  // peleUiuiUiui();
 */
 
 void allStop() {
