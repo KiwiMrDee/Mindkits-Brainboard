@@ -1,20 +1,4 @@
-/*
-// Niuean by @KaraSmithNZ
-void tu()                                    { allStop();            }
-void fanoKiMua(unsigned int time)            { goForward(time);      }  // fanoKiMua(1000);
-void fanoKiTua(unsigned int time)            { goBackward(time);     }  // fanoKiTua(1000);
-void fanoFaahiMatau(unsigned int time)       { turnRight(time);      }  // fanoFaahiMatau(1000);
-void fanoFaahiHema(unsigned int time)        { turnLeft(time);       }  // fanoFaahiHema(1000);
-void liuKiTuaFaahiMatau(unsigned int time)   { backRight(time);      }  // liuKiTuaFaahiMatau(1000);
-void liuKiTuaFaahiHema(unsigned int time)    { backLeft(time);       }  // liuKiTuaFaahiHema(1000);
-void viviloKeHeFaahiMatau(unsigned int time) { twistRight(time);     }  // viviloKeHeFaahiMatau(1000);
-void viviloKeHeFaahiHema(unsigned int time)  { twistLeft(time);      }  // viviloKeHeFaahiHema(1000);
-void fakaMavilovilo(unsigned int numWiggles) { doWiggle(numWiggles); }  // fakaMavilovilo(4);
-void peleTada()                              { playTaDa();           }  // peleTada()
-void peleUiuiUiui()                          { playSiren();          }  // peleUiuiUiui()
-*/
-
-// Maori by @temokoroa               
+﻿// Maori by @temokoroa               
 // Robot        Mihini Karetao       
 // allStop      ??                   
 // goForward    Neke Whakamua        
@@ -29,16 +13,48 @@ void peleUiuiUiui()                          { playSiren();          }  // peleU
 // playTada     ??                   
 // playsiren    Whakatangihia       
 
+/*
+// Samoan by Janet Tautaiolefua 
+void taofi()                                { allStop();            }  // taofi();
+void aluILuma(unsigned int time)            { goForward(time);      }  // aluILuma(1000);
+void aluITua(unsigned int time)             { goBackward(time);     }  // aluITua(1000);
+void liliuTaumatau(unsigned int time)       { turnRight(time);      }  // liliuTaumatau(1000);
+void liliuAgavale(unsigned int time)        { turnLeft(time);       }  // liliuAgavale(1000);
+void solomuliTaumatau(unsigned int time)    { backRight(time);      }  // solomuliTaumatau(1000);
+void solomuliAgavale(unsigned int time)     { backLeft(time);       }  // solomuliAgavale(1000);
+void mimiloTaumatau(unsigned int time)      { twistRight(time);     }  // mimiloTaumatau(1000);
+void mimiloAgavale(unsigned int time)       { twistLeft(time);      }  // mimiloAgavale(1000);
+void luelue(unsigned int numWiggles)        { doWiggle(numWiggles); }  // luelue(4);
+void malo()                                 { playTaDa();           }  // malo();
+void lapataiga()                            { playSiren();          }  // lapataiga();
+*/
+/*
+// Niuean by @KaraSmithNZ
+void tu()                                    { allStop();            }
+void fanoKiMua(unsigned int time)            { goForward(time);      }  // fanoKiMua(1000);
+void fanoKiTua(unsigned int time)            { goBackward(time);     }  // fanoKiTua(1000);
+void fanoFaahiMatau(unsigned int time)       { turnRight(time);      }  // fanoFaahiMatau(1000);
+void fanoFaahiHema(unsigned int time)        { turnLeft(time);       }  // fanoFaahiHema(1000);
+void liuKiTuaFaahiMatau(unsigned int time)   { backRight(time);      }  // liuKiTuaFaahiMatau(1000);
+void liuKiTuaFaahiHema(unsigned int time)    { backLeft(time);       }  // liuKiTuaFaahiHema(1000);
+void viviloKeHeFaahiMatau(unsigned int time) { twistRight(time);     }  // viviloKeHeFaahiMatau(1000);
+void viviloKeHeFaahiHema(unsigned int time)  { twistLeft(time);      }  // viviloKeHeFaahiHema(1000);
+void fakaMavilovilo(unsigned int numWiggles) { doWiggle(numWiggles); }  // fakaMavilovilo(4);
+void peleTada()                              { playTaDa();           }  // peleTada();
+void peleUiuiUiui()                          { playSiren();          }  // peleUiuiUiui();
+*/
+/*
 // Kiwi by @KiwiMrDee
-sweetAs              // allStop
-yeahNahYeah          // goForward
-nahYeahNah           // goBackward
-powerRight           // turnRight
-powerOtherRight      // turnLeft
-slideRight           // goBackRight
-slideOtherRight      // goBackLeft
-boogieRight          // twistRight
-boogieOtherRight     // twistLeft
-hakaBaby             // wiggle
-doDaLourde           // playTada
-weeoooWeeoo          // playsiren
+void sweetAs()                               { allStop();            }
+void yeahNahYeah(unsigned int time)          { goForward(time);      }  // yeahNahYeah(1000);
+void nahYeahNah(unsigned int time)           { goBackward(time);     }  // nahYeahNah(1000);
+void powerRight(unsigned int time)           { turnRight(time);      }  // powerRight(1000);
+void powerOtherRight(unsigned int time)      { turnLeft(time);       }  // powerOtherRight(1000);
+void slideRight(unsigned int time)           { backRight(time);      }  // slideRight(1000);
+void slideOtherRight(unsigned int time)      { backLeft(time);       }  // slideOtherRight(1000);
+void boogieRight(unsigned int time)          { twistRight(time);     }  // boogieRight(1000);
+void boogieOtherRight(unsigned int time)     { twistLeft(time);      }  // boogieOtherRight(1000);
+void hakaBaby(unsigned int numWiggles)       { doWiggle(numWiggles); }  // hakaBaby(4);
+void doDaLourde()                            { playTaDa();           }  // doDaLourde();
+void weeoooWeeoo()                           { playSiren();          }  // weeoooWeeoo();
+*/
