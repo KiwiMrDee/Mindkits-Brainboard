@@ -73,6 +73,22 @@ void peleTada()                              { playTaDa();           }  // peleT
 void peleUiuiUiui()                          { playSiren();          }  // peleUiuiUiui();
 */
 
+/*
+// Samoan by Janet Tautaiolefua 
+void taofi()                                { allStop();            }  // taofi();
+void aluILuma(unsigned int time)            { goForward(time);      }  // aluILuma(1000);
+void aluITua(unsigned int time)             { goBackward(time);     }  // aluITua(1000);
+void liliuTaumatau(unsigned int time)       { turnRight(time);      }  // liliuTaumatau(1000);
+void liliuAgavale(unsigned int time)        { turnLeft(time);       }  // liliuAgavale(1000);
+void solomuliTaumatau(unsigned int time)    { backRight(time);      }  // solomuliTaumatau(1000);
+void solomuliAgavale(unsigned int time)     { backLeft(time);       }  // solomuliAgavale(1000);
+void mimiloTaumatau(unsigned int time)      { twistRight(time);     }  // mimiloTaumatau(1000);
+void mimiloAgavale(unsigned int time)       { twistLeft(time);      }  // mimiloAgavale(1000);
+void siva(unsigned int numWiggles)          { doWiggle(numWiggles); }  // siva(4);
+void malo()                                 { playTaDa();           }  // malo();
+void lapataiga()                            { playSiren();          }  // lapataiga();
+*/
+
 void allStop() {
   rightMotor(0);
   leftMotor(0);
